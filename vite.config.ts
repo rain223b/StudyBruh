@@ -6,8 +6,13 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    // If deploying to https://<USERNAME>.github.io/<REPO>/, set base to '/<REPO>/'
-    // base: '/your-repo-name/', 
+    /**
+     * IMPORTANT FOR GITHUB PAGES:
+     * If your site is at https://<USERNAME>.github.io/<REPO>/
+     * you MUST set base to '/<REPO>/'
+     * Example: base: '/my-game-hub/',
+     */
+    base: process.env.NODE_ENV === 'production' ? './' : '/', 
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
