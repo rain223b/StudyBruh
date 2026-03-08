@@ -1,0 +1,81 @@
+[
+  {
+    "id": "2048",
+    "title": "2048",
+    "description": "Join the numbers and get to the 2048 tile!",
+    "thumbnail": "https://www.coolmathgames.com/sites/default/files/styles/mobile_game_image/public/2048_OG-logo.jpg.webp?itok=BKildIhs",
+    "iframeUrl": "/api/proxy?url=https://gabrielecirulli.github.io/2048/"
+  },
+  {
+    "id": "hextris",
+    "title": "Hextris",
+    "description": "Fast-paced puzzle game inspired by Tetris.",
+    "thumbnail": "https://m.media-amazon.com/images/I/51x5yEr3VCL.png",
+    "iframeUrl": "https://hextris.io/"
+  },
+  {
+    "id": "snake",
+    "title": "Classic Snake",
+    "description": "The classic arcade game of eating and growing.",
+    "thumbnail": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/780750/header.jpg?t=1528049846",
+    "iframeUrl": "/api/proxy?url=https://patorjk.com/games/snake/"
+  },
+  {
+    "id": "pacman",
+    "title": "Pacman",
+    "description": "Relive the classic arcade experience.",
+    "thumbnail": "https://www.customcontrollers.com/cdn/shop/articles/Untitled_-_2025-04-30T111838.925_f657f1cf-c1a6-40c0-b5ea-2503357193b2.png?v=1747385518&width=2048",
+    "iframeUrl": "https://macek.github.io/google_pacman/"
+  },
+  {
+    "id": "tetris",
+    "title": "Tetris",
+    "description": "The world's most popular puzzle game.",
+    "thumbnail": "https://static.wikia.nocookie.net/smosh/images/1/19/Tetris.jpg/revision/latest/thumbnail/width/360/height/450?cb=20190703183836",
+    "iframeUrl": "https://chvin.github.io/react-tetris/"
+  },
+  {
+    "id": "geometry-dash",
+    "title": "Geometry Dash",
+    "description": "Jump and fly your way through danger in this rhythm-based action platformer!",
+    "thumbnail": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322170/capsule_616x353.jpg?t=1703006148",
+    "iframeUrl": "https://geometry-dash.io/"
+  },
+  {
+    "id": "web-browser",
+    "title": "Web Browser & Proxy",
+    "description": "Browse the web through a built-in proxy to bypass iframe restrictions. Note: Some complex sites may still have issues.",
+    "thumbnail": "https://cdn.dribbble.com/userupload/30024540/file/still-f21724c34c49da4f12da4e5dd52c4de4.gif",
+    "iframeUrl": "about:blank",
+    "isBrowser": true
+  },
+  {
+    "id": "retro-bowl-custom",
+    "title": "Retro Bowl",
+    "description": "The official 8-bit football game. Coach your team to victory!",
+    "thumbnail": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000048336/e3c1297d2ec30fe72a657af60c416d10c68a784bc874cf28e19cdf9261956919",
+    "iframeUrl": "/api/proxy?url=https://retrobowl.me/",
+    "tag": "Trending"
+  },
+  {
+    "id": "doodle-jump",
+    "title": "Doodle Jump",
+    "description": "Jump as high as you can in this classic arcade game.",
+    "thumbnail": "https://imgs.crazygames.com/games/doodle-jump/cover-1669135753297.png?format=auto&quality=70&metadata=none",
+    "iframeUrl": "/api/proxy?url=https://doodlejump.io/"
+  },
+  {
+    "id": "flappy-bird",
+    "title": "Flappy Bird",
+    "description": "The original bird-flapping challenge. Can you get past 10?",
+    "thumbnail": "https://static.wikia.nocookie.net/gamia_gamepedia_en/images/b/b5/Title.jpg/revision/latest?cb=20180806163955",
+    "iframeUrl": "/api/proxy?url=https://flappybird.io/"
+  },
+  {
+    "id": "2048-cupcakes",
+    "title": "2048 Cupcakes",
+    "description": "A delicious twist on the classic 2048 game with cupcakes!",
+    "thumbnail": "https://www.rapidwebapp.com/wp-content/uploads/2048-Cupcakes.jpg",
+    "iframeUrl": "/api/proxy?url=https://2048cupcakes.org/"
+  }
+]
