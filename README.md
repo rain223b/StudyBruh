@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Clever | Portal
 
-# Run and deploy your AI Studio app
+A curated collection of the best web-based games.
 
-This contains everything you need to run your app locally.
+## How to Deploy to GitHub Pages
 
-View your app in AI Studio: https://ai.studio/apps/2bab40c9-ab60-4e2f-b690-e59598febec2
+1.  **Create a new repository** on GitHub.
+2.  **Upload the files** from this project to your repository.
+    *   **CRITICAL:** Do NOT upload the `node_modules` folder.
+    *   **CRITICAL:** Do NOT upload the `dist` folder.
+    *   **DO upload** the `.github` folder, `public` folder, `src` folder, `index.html`, `package.json`, `tsconfig.json`, and `vite.config.ts`.
+3.  **Enable GitHub Actions:**
+    *   Go to **Settings** > **Pages** in your GitHub repository.
+    *   Under **Build and deployment** > **Source**, select **GitHub Actions**.
+4.  **Wait for the build:** The deployment will start automatically. You can track it in the **Actions** tab.
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Note on Proxy Features
+The **Web Browser** and **Proxy** features require a Node.js server. Since GitHub Pages is a static host, these features will not work there. For full functionality, consider hosting on **Vercel** or **Render**.

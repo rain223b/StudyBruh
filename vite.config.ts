@@ -8,11 +8,10 @@ export default defineConfig(({mode}) => {
   return {
     /**
      * IMPORTANT FOR GITHUB PAGES:
-     * If your site is at https://<USERNAME>.github.io/<REPO>/
-     * you MUST set base to '/<REPO>/'
-     * Example: base: '/my-game-hub/',
+     * Setting base to './' makes all asset paths relative, 
+     * which works regardless of the repository name.
      */
-    base: process.env.NODE_ENV === 'production' ? './' : '/', 
+    base: './', 
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
