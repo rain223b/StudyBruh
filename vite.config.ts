@@ -16,6 +16,9 @@ export default defineConfig(({mode}) => {
     build: {
       outDir: 'docs',
       emptyOutDir: true,
+      rollupOptions: {
+        input: 'entry.html'
+      }
     },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
