@@ -17,7 +17,7 @@ export default defineConfig(({mode}) => {
       outDir: 'docs',
       emptyOutDir: true,
       rollupOptions: {
-        input: 'app.html'
+        input: 'index.html'
       }
     },
     define: {

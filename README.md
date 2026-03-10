@@ -15,9 +15,9 @@ A curated collection of the best web-based games.
 3.  **Wait 60 seconds:** Your site will be live!
 
 ### Why you saw a MIME type error:
-GitHub Pages was trying to read the "blueprint" (source code) instead of the "finished building" (the `docs` folder). By switching the setting to `/docs`, you tell GitHub to serve the working version of the app.
+GitHub Pages was trying to read the "blueprint" (the `index.html` in the root) instead of the "finished building" (the `index.html` in the `docs` folder). By switching the setting to `/docs`, you tell GitHub to serve the working version of the app.
 
-I have also added a "Redirect" to the main folder, so even if you forget to change the setting, it will try to send you to the right place!
+I have restored the local preview, so it should be working now!
 
 ## Note on Proxy Features
 The **Web Browser** and **Proxy** features require a Node.js server. Since GitHub Pages is a static host, these features will not work there. For full functionality, consider hosting on **Vercel** or **Render**.
