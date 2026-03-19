@@ -77,5 +77,13 @@
     "description": "A delicious twist on the classic 2048 game with cupcakes!",
     "thumbnail": "https://www.rapidwebapp.com/wp-content/uploads/2048-Cupcakes.jpg",
     "iframeUrl": "/api/proxy?url=https://2048cupcakes.org/"
+  },
+  {
+    "id": "drive-mad",
+    "title": "Drive Mad",
+    "description": "Drive Mad is a car game where you drive on a track filled with obstacles. Created by Martin Magni.",
+    "thumbnail": "https://3kh0-assets.silvereen.net/3kh0-assets/drive-mad/webapp/cover.jpg",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/drive-mad/index.html",
+    "tag": "New"
   }
 ]
