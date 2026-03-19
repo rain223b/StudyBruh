@@ -6,20 +6,9 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    /**
-     * IMPORTANT FOR GITHUB PAGES:
-     * Setting base to './' makes all asset paths relative, 
-     * which works regardless of the repository name.
-     */
-    base: './', 
+    // If deploying to https://<USERNAME>.github.io/<REPO>/, set base to '/<REPO>/'
+    base: '/StudyBruh/', 
     plugins: [react(), tailwindcss()],
-    build: {
-      outDir: 'docs',
-      emptyOutDir: true,
-      rollupOptions: {
-        input: 'index.html'
-      }
-    },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
