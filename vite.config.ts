@@ -7,7 +7,7 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
     // If deploying to https://<USERNAME>.github.io/<REPO>/, set base to '/<REPO>/'
-    base: '/StudyBruh/', 
+    base: mode === 'production' ? '/StudyBruh/' : '/', 
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
