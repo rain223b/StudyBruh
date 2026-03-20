@@ -308,24 +308,6 @@ export default function App() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Footer */}
-      <footer className="border-t border-zinc-800 py-12 bg-zinc-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2 opacity-50">
-            <Gamepad2 className="w-5 h-5" />
-            <span className="font-bold">GAMEHUB</span>
-          </div>
-          <p className="text-zinc-500 text-sm">
-            © {new Date().getFullYear()} Unblocked Games Hub. All rights reserved.
-          </p>
-          <div className="flex gap-6 text-sm text-zinc-500">
-            <a href="#" className="hover:text-emerald-500 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-emerald-500 transition-colors">Terms</a>
-            <a href="#" className="hover:text-emerald-500 transition-colors">Contact</a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

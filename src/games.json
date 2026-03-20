@@ -85,5 +85,85 @@
     "thumbnail": "https://3kh0-assets.silvereen.net/3kh0-assets/drive-mad/webapp/cover.jpg",
     "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/drive-mad/index.html",
     "tag": "New"
+  },
+  {
+    "id": "core-ball",
+    "title": "Core Ball",
+    "description": "A simple but addictive timing and precision game.",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiFd8BmVH8ug2To1s9XGULCY8lNrRX2esJig&s",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/core-ball/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "slope",
+    "title": "Slope",
+    "description": "Roll down the slope for as long as possible without falling off the edge or hitting obstacles.",
+    "thumbnail": "https://slopegame.net/data/image/game/slope-game.png",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/slope/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "tiny-fishing",
+    "title": "Tiny Fishing",
+    "description": "Tiny Fishing is a fishing game where you have to upgrade your gear to get bigger fish.",
+    "thumbnail": "https://www.coolmathgames.com/sites/default/files/styles/mobile_game_image/public/TinyFishing_OG-logo.jpg.webp?itok=i5zMuX6W",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/tiny-fishing/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "subway-surfers",
+    "title": "Subway Surfers",
+    "description": "Dash as fast as you can! Dodge the oncoming trains!",
+    "thumbnail": "https://static.wikia.nocookie.net/subwaysurf/images/3/35/Promote_Subway.png/revision/latest/scale-to-width-down/820?cb=20130114122353",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/subway-surfers/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "vex-7",
+    "title": "Vex 7",
+    "description": "Play Vex 7, an action-packed platform game with new obstacles and challenges.",
+    "thumbnail": "https://dashmetry.com/cache/data/image/game/vex-9/vex-9-3-m320x180.webp",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/vex7/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "wordle",
+    "title": "Wordle",
+    "description": "Guess the word in 6 tries. Play daily, hourly and infinite modes.",
+    "thumbnail": "https://www.internetmatters.org/wp-content/uploads/2022/02/wordle-logo.webp",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/wordle/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "tunnel-rush",
+    "title": "Tunnel Rush",
+    "description": "Speed down a colorful tunnel, dodging obstacles in this fast-paced game.",
+    "thumbnail": "https://play-lh.googleusercontent.com/tw4wflpCbpvr2UhCnrUZfWz7nj7pE6E_JM9vJx3p8ottatherGZk5q_NW09A7acd6uA=w526-h296-rw",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/tunnel-rush/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "fruit-ninja",
+    "title": "Fruit Ninja",
+    "description": "Slice fruit, don't slice bombs – that is all you need to know to get started with the addictive Fruit Ninja action!",
+    "thumbnail": "https://www.coolmathgames.com/sites/default/files/FruitNinja_OG-Logo.jpg",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/fruitninja/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "crossy-road",
+    "title": "Crossy Road",
+    "description": "Why did the chicken cross the road? Find out in this endless hopper.",
+    "thumbnail": "https://m.media-amazon.com/images/I/81oXWZ4JUgL.png",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/crossyroad/index.html",
+    "tag": "New"
+  },
+  {
+    "id": "duck-life-3",
+    "title": "Duck Life 3",
+    "description": "Train your duck to be the champion racer in this classic Flash game.",
+    "thumbnail": "https://myvideogamelist-com.s3.amazonaws.com/assets/boxart/64241.png",
+    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/ducklife3/index.html",
+    "tag": "New"
   }
 ]
