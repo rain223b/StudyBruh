@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Gamepad2, X, Maximize2, Minimize2, Search, Info, Globe, ArrowRight, RotateCcw, Home } from 'lucide-react';
+import { Gamepad2, X, Maximize2, Minimize2, Search, Info, Globe, ArrowRight, RotateCcw, Home, ArrowUpDown } from 'lucide-react';
 import gamesData from './games.json';
 
 interface Game {
@@ -22,6 +22,7 @@ export default function App() {
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [sortBy, setSortBy] = useState<'default' | 'az' | 'za' | 'trending' | 'new'>('default');
   const [browserUrl, setBrowserUrl] = useState('https://www.google.com/search?igu=1');
   const [urlInput, setUrlInput] = useState('https://www.google.com/search?igu=1');
 
@@ -48,7 +49,21 @@ export default function App() {
   const filteredGames = gamesData.filter(game =>
     game.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     game.description.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  ).sort((a, b) => {
+    if (sortBy === 'az') return a.title.localeCompare(b.title);
+    if (sortBy === 'za') return b.title.localeCompare(a.title);
+    if (sortBy === 'trending') {
+      if (a.tag === 'Trending' && b.tag !== 'Trending') return -1;
+      if (b.tag === 'Trending' && a.tag !== 'Trending') return 1;
+      return 0;
+    }
+    if (sortBy === 'new') {
+      if (a.tag === 'New' && b.tag !== 'New') return -1;
+      if (b.tag === 'New' && a.tag !== 'New') return 1;
+      return 0;
+    }
+    return 0;
+  });
 
   const toggleFullscreen = () => {
     setIsFullscreen(!isFullscreen);
@@ -131,6 +146,24 @@ export default function App() {
 
       {/* Games Grid */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold hidden sm:block">All Games</h2>
+          <div className="relative ml-auto">
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as any)}
+              className="appearance-none bg-zinc-900 border border-zinc-800 rounded-lg py-2 pl-4 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 text-zinc-300 cursor-pointer"
+            >
+              <option value="default">Default Order</option>
+              <option value="az">A-Z</option>
+              <option value="za">Z-A</option>
+              <option value="trending">Trending First</option>
+              <option value="new">New First</option>
+            </select>
+            <ArrowUpDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 pointer-events-none" />
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredGames.map((game, index) => (
             <motion.div
