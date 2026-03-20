@@ -9,5 +9,20 @@
   <body class="bg-zinc-950">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      function openGame(gameUrl) {
+        var win = window.open('about:blank'); 
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100vh';
+        iframe.style.margin = '0';
+        iframe.src = gameUrl;
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        win.document.body.appendChild(iframe);
+      }
+    </script>
   </body>
 </html>
