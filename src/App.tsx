@@ -172,7 +172,36 @@ export default function App() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.05 }}
               whileHover={{ y: -5 }}
-              onClick={() => setSelectedGame(game)}
+              onClick={() => {
+                // THE NEW CLOAKING SCRIPT!
+                if (game.isBrowser) {
+                  // If it's the web browser, use the normal modal
+                  setSelectedGame(game);
+                } else {
+                  // If it's a game, use the about:blank tab trick!
+                  let finalUrl = game.iframeUrl;
+                  
+                  // Fix relative URLs (like /api/proxy) so they work in the blank tab
+                  if (finalUrl.startsWith('/')) {
+                    finalUrl = window.location.origin + finalUrl;
+                  }
+                  
+                  const win = window.open('about:blank');
+                  if (win) {
+                    const iframe = win.document.createElement('iframe');
+                    iframe.style.border = 'none';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100vh';
+                    iframe.style.margin = '0';
+                    iframe.src = finalUrl;
+                    win.document.body.style.margin = '0';
+                    win.document.body.style.height = '100vh';
+                    win.document.body.appendChild(iframe);
+                  } else {
+                    alert("Please allow pop-ups so the game can open in a hidden tab!");
+                  }
+                }
+              }}
               className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden cursor-pointer hover:border-emerald-500/50 transition-all shadow-xl"
             >
               <div className="aspect-video overflow-hidden">
@@ -214,7 +243,7 @@ export default function App() {
         )}
       </main>
 
-      {/* Game Modal */}
+      {/* Game Modal (Now mostly just for the Web Browser feature) */}
       <AnimatePresence>
         {selectedGame && (
           <motion.div
