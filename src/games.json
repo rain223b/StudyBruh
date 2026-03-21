@@ -54,7 +54,7 @@
     "title": "Retro Bowl",
     "description": "The official 8-bit football game. Coach your team to victory!",
     "thumbnail": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000048336/e3c1297d2ec30fe72a657af60c416d10c68a784bc874cf28e19cdf9261956919",
-    "iframeUrl": "https://3kh0-assets.silvereen.net/3kh0-assets/retro-bowl/index.html",
+    "iframeUrl": "/retro-bowl/index.html",
     "tag": "Trending"
   },
   {
